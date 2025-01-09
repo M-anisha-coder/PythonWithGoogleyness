@@ -120,13 +120,39 @@ print("Does your {} {}?".format(animal, action))
 citypopulation =32456
 print(f"hello {citypopulation} people")
 # Another important string method: split()
+# This function or method returns a data container called a list that contains the words from the input string.
+# The split method has two additional arguments (sep and maxsplit). The sep argument stands for "separator".the default separator is whitespace.
+# the maxsplit argument provides the maximum number of splits. The argument gives maxsplit + 1 number of elements in the new list,
+paragraph ="This function or method returns a data container called a list that"
+print(paragraph.split(" ",3))
+# to find last occurance print(my_string.rfind(substring))
 
-# ---------------------------------------------------------------------------------------------------------------------
-
-#             Bitwise 
-#                   ^:(XOR)
-#                     
-#                              
-
+# -------------------------------------------------Bitwise Operator--------------------------------------------------------------------
+ 
+# Bitwise operators in Python operate on binary representations of integers. They perform operations bit by bit, meaning they apply logical operations to each corresponding bit of two numbers
+# 1. Bitwise AND (&)
+# Performs a logical AND operation on each bit of two numbers.
+# A bit is 1 only if both corresponding bits are 1.
+a = 5  # Binary: 0101
+b = 3  # Binary: 0011
+result = a & b
+print(result)  # Output: 1 (Binary: 0001)
+# 2. Bitwise OR (|)
+# Performs a logical OR operation on each bit of two numbers.
+# A bit is 1 if at least one of the corresponding bits is 1.
+a = 5  # Binary: 0101
+b = 3  # Binary: 0011
+result = a | b
+print(result)  # Output: 7 (Binary: 0111)
+# 3. Bitwise XOR (^)
+# Performs a logical XOR operation on each bit of two numbers.
+# A bit is 1 if the corresponding bits are different.
+a = 5  # Binary: 0101
+b = 3  # Binary: 0011
+result = a ^ b
+print(result)  # Output: 6 (Binary: 0110)
+# 4. Bitwise NOT (~)
+# 5. Left Shift (<<)
+# 6. Right Shift (>>)
 # Note : whiteSpace and style Guidelines are important
          
