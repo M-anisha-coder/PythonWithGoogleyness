@@ -152,7 +152,25 @@ b = 3  # Binary: 0011
 result = a ^ b
 print(result)  # Output: 6 (Binary: 0110)
 # 4. Bitwise NOT (~)
+# Inverts all the bits of a number.(give 2's complement of real answere number)
+# Trick to Equivalent is -(n+1) in Python (two's complement representation).
+a=9;
+print(~a); # -10
 # 5. Left Shift (<<)
+# Shifts the bits of the number to the left by a specified number of positions.
+# Adds 0 bits on the right. 
+# we gain bits in left shift.
+# Trick to Equivalent is x<<n then answer will be x*2^n
+a = 5  # Binary: 0101
+result = a << 2
+print(result)  # Output: 20 (Binary: 10100)
 # 6. Right Shift (>>)
-# Note : whiteSpace and style Guidelines are important
+# Shifts the bits of the number to the right by a specified number of positions.
+# Drops bits on the right. For positive numbers, 0 bits are added on the left.
+# we lose bits on left shift.
+# Trick to Equivalent is x<<n then answer will be x/2^n
+a = 5  # Binary: 0101
+result = a >> 2
+print(result)  # Output: 1 (Binary: 0001)
+
          
